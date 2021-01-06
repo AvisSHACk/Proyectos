@@ -1,0 +1,16 @@
+// Base
+@import "base/base";
+
+//mixins
+@import "config/Vars";
+@import "config/mixins";
+
+// themes
+@import "themes/tipography.scss";
+
+@import "modules/modules";
+
+// components
+@import "componentes/header";
+@import "componentes/menu";
+
