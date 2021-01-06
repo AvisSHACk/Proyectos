@@ -1,0 +1,16 @@
+.main-sidebar {
+    position: fixed;
+    height: 100vh;
+    background:#111;
+    color:#fff;
+    padding:1rem .8rem;
+    
+    &__logo {
+        display: flex;
+    }
+    
+    &__img {
+        width:30%;
+        margin: auto;
+    }
+}
