@@ -1,0 +1,51 @@
+.login {
+    background-image: linear-gradient( rgba(0,0,0,0.60), rgba(0,0,0,0.60)  ), url(../img/fondo.png) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.main-form {
+    display: flex;
+
+    &__container, 
+    &__container--addserie{
+        width:30%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding:1.4rem 1rem;
+        background:#222;
+        color:#fff;
+        border-radius: 12px;
+    }
+    
+    &__container--addserie {
+        width:50%;
+        background:none;
+        color:#000;
+
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom:1rem;
+    }
+
+    &__input,
+    &__input--addserie {
+        width:100%;
+        background:#111;
+        color:#fff;
+        margin-bottom:1rem;
+    }
+
+    &__input--addserie {
+        background:none;
+        color:#000;
+    }
+
+    &__button {
+        width: 100%;
+        padding:.6rem .4rem;
+    }
+}
