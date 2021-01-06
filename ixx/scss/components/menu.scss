@@ -1,0 +1,59 @@
+.main-nav {
+	position: fixed;
+    top: 0;
+    right: -15em;
+    z-index: 200;
+    height: 100vh;
+    padding: 1em;
+    width: 15em;
+    transition: all .2s;
+    background: rgb(35, 35, 35);
+    color: #fff;
+    border-left: 10px solid rgb(70, 70, 70);
+    line-height: 3rem;
+
+    @include from(medium) {
+    	position: static;
+    	background: none;
+    	width: auto;
+    	height: auto;
+    	padding: 0;
+    	color:var(--blanco);
+    }
+
+	&.active {
+		right: 0;
+	}
+
+	.menu {
+		display: flex;
+		flex-direction: column;
+
+		@include from(medium) {
+	    	flex-direction: row;
+    	}
+	}
+
+	&__item {
+		margin-left: 1rem;
+	}
+
+	a {
+		display: block;
+		font-size: 1.2rem;
+		font-family: 'Roboto';
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+body {
+	position: relative;
+	right: 0;
+	transition: all .2s;
+	&.active {
+		right: 15em;
+	}
+}

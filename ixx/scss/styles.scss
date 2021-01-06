@@ -1,0 +1,23 @@
+@import 'base/base';
+
+//config
+@import 'config/vars';
+@import 'config/mixins';
+
+//Color
+@import 'theme/color';
+
+@import 'components/header';
+@import 'components/menu';
+@import 'components/about';
+@import 'components/proyectos';
+@import 'components/blog';
+@import 'components/footer';
+@import 'components/gallery';
+@import 'components/contact-form';
+@import 'components/header-contact';
+
+
+//layouts
+@import 'layouts/layouts';
+@import 'layouts/modules';

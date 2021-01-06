@@ -1,0 +1,37 @@
+.main-header,
+[class*="main-header--"] {
+	padding-top:1rem;
+	padding-bottom:1rem;
+}
+
+.main-header--absolute {
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+}
+
+.main-header--dark .main-nav a {
+	color:#000;
+}
+
+.banner {
+	background-size: cover;
+	background-image: linear-gradient( rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('../img/banner.jpg');
+	min-height: calc(50vh + 110px);
+	height: auto;
+	// &::before {
+	// 	content: '';
+	// 	position: absolute;
+	// 	width:100%;
+	// 	height: 100%;
+	// 	background:rgba(#000, .8);
+	// }
+}
+
+.logo {
+	width:74%;
+
+	@include from(small) {
+		width:auto;		
+	}
+}

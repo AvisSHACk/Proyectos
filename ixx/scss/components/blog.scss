@@ -1,0 +1,54 @@
+.main-blog {
+	padding-top:3rem;
+	padding-bottom:3em;
+	&__contenedor {
+		@include from(small) {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 1rem;
+		}
+
+		@include from(medium) {
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
+			grid-gap: 1rem;
+		}
+
+		@include from(large) {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 1rem;
+		}
+	}
+
+ 	&__item {
+ 		padding-bottom: 1rem;
+
+ 		@include from(medium) {
+ 			display: flex;
+ 			justify-content: space-between;
+ 		}
+ 	}
+
+ 	&__img, &__contenido {
+ 		@include from(medium) {
+ 			width: 49%;
+ 		}
+ 	}
+
+	&__title {
+		text-align: center;
+		padding-top:1rem; 
+		padding-bottom:1rem;
+		@include from(medium) {
+ 			text-align: left;
+ 		}
+	}
+
+	p {
+		text-align: center;
+		@include from(medium) {
+ 			text-align: left;
+ 		}
+	}
+}

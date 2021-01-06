@@ -1,0 +1,39 @@
+.l-container,
+[class*="l-container--"] {
+	max-width: 1200px;
+	margin-left:auto;
+	margin-right: auto;
+}
+
+.l-container--row {
+	display: flex;
+	flex-direction: column;
+	padding-left:.8rem;
+	padding-right:.8rem;
+
+	@include from(medium) {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+.l-container--roww {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left:.8rem;
+	padding-right:.8rem;
+}
+
+.l-container--footer {
+	display: flex;
+}
+
+.l-container--single {
+	max-width: 900px;
+}
+
+.l-container--center {
+	display: flex;
+	justify-content: center;
+}

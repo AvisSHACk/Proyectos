@@ -1,0 +1,11 @@
+.main-gallery {
+	display: flex;
+	flex-wrap: wrap;
+
+	&__item {
+		width:50%;
+		@include from(medium){
+			width:33.33%;
+		}
+	}
+}

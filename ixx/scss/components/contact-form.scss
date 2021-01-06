@@ -1,0 +1,22 @@
+.main-contact {
+	padding-top: 2rem;
+}
+
+.main-contact p {
+	margin-bottom: 1rem;
+}
+.main-contact input, textarea {
+	padding: .6rem;
+	margin-top: .5rem;
+	width: 100%;
+	border: 1px solid var(--grisOscuro);
+	border-radius:6px;
+}
+
+.main-contact button {
+	width: 100%;
+	padding:.6rem;
+	background: #ff4242;
+	color: var(--blanco);
+	cursor: pointer;
+}
