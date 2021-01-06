@@ -1,0 +1,30 @@
+.main-header {
+	background-image: url(../img/header.png);
+	background-position: top;
+	background-size:cover;
+	// color:var(--firstColor);
+
+	&__logo {
+		width: auto;
+		padding-top:2rem;
+		padding-bottom:2rem;
+	}
+
+	&__image {
+		width: 50%;
+		margin: auto;
+		background-color:var(--firstColor);
+	}
+
+	@include from(large) {
+		&__logo {
+			padding-top:8rem;
+			padding-bottom:8rem;
+		}
+
+		&__image {
+			width: 30%;
+		}
+	}
+}
+

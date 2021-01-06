@@ -1,0 +1,44 @@
+.main-single {
+	margin-top:1.5rem;
+	padding: .6rem;
+    box-shadow: 0px 0px 5px #888888;
+    background: #fff;
+
+	.main-card {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 1.5rem;
+		@include from(medium) {
+			flex-direction:row;
+		}
+	}
+	
+	.main-article__imageContent {
+		width: 35%;
+		margin: auto;
+		@include from(medium){
+			width: 20%;
+		}
+	}
+
+	.main-article__info {
+		@include from(medium) {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding-left:1rem;
+			width: 80%;
+		}
+	}
+
+	.main-article__title {
+		text-align: center;
+	}
+
+	.main-article__argument {
+		text-align: center;
+		@include from(large) {
+			text-align: left;
+		}
+	}
+}

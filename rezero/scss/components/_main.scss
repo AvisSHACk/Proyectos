@@ -1,0 +1,59 @@
+.main{
+	&__title {
+		text-align: center;
+		padding-top:2rem;
+		padding-bottom:2rem;
+		font-weight: $light;
+	}
+}
+
+.main-article {
+	overflow: hidden;
+
+	&__title {
+		text-align: center;
+	}
+
+	&__imageContent {
+		overflow: hidden;
+	}
+
+	&__tiLink {
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+	
+	&__link {
+		height: 205px;
+		@include from(large) {
+			height: 406px;
+		}
+	}
+
+	&__content {
+		display: table;
+		margin:auto;
+	}
+
+	&__item {
+		padding-top:1rem;
+		padding-bottom: 1rem;
+		padding-left: 1rem;
+		color:var(--textColor-title);
+
+		&:hover {
+			background: #f55555;
+			color:#fff;
+		}
+	}
+
+	&__page {
+		display: table;
+		margin: auto;
+
+		p {
+			line-height: 1.6
+		}
+	}
+}

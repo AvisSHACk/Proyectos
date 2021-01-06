@@ -1,0 +1,33 @@
+:root {
+    --t1: 30px;
+    --t2: 25px;
+    --t3: 19px;
+    --base: 16px;
+    --small: 14px;
+    --smaller: 12px;
+    
+    @include from(medium) {
+        --t1: 51px;
+        --t2: 35px;
+    }
+}
+
+.t1 {
+    font-size: var(--t1);
+}
+
+.t2 {
+    font-size: var(--t2);
+}
+
+.t3 {
+    font-size: var(--t3);
+}
+
+.small {
+    font-size: var(--small);
+}
+
+.smaller {
+    font-size: var(--smaller);
+}
