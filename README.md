@@ -1,2 +1,2 @@
 # portafolio
-Un portafolio como practica de HTML, CSS y JS
+Practicas a lo largo de mi estudio
